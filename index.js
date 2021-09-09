@@ -1,20 +1,30 @@
 const validatePassword = require('./passwordvalidation'); //import the function
+const readline = require('readline');
 
-function validatePassword(){
-    console.log("Enter a password to validate (or :q to quit)")
-    var text = input()
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+const main = function(){
+    rl.question("Enter a password to validate (or :q to quit)", (text) => {
+        if (validatePassword(text) == false && text != ':q') {
+            console.log("The password is invalid: " + text);    // if valid
+        }
+        else if (validatePassword(text) == true && text != ':q') {
+            console.log("The password is valid: " + text);  // if invalid
+        }
+        if (text == ':q'){
+            console.log('Goodbye!');    //if quit
+            return;
+        }
+
+        main();
+    
+    });
 
 
-    if (validatePassword(text) == false && text != ':q') {
-        console.log("The password is invalid: " + text);    // if valid
-    }
-    else if (validatePassword(text) == true && text != ':q') {
-        console.log("The password is valid: " + text);  // if invalid
-    }
-    if (text == ':q'){
-        console.log('Goodbye!');    //if quit
-        return;
-    }
-
-    validatePassword();
+    
 }
+
+main();
