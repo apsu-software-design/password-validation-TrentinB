@@ -20,13 +20,13 @@ This repo contains code for the password validator. The below questions should b
 
 
 ## Approximately how many hours did it take you to complete this assignment?
-> After I was actually able to compile the ts into js only an hour or two. A lot of time and frustration p until that point though
+> After I was actually able to compile the ts into js only an hour or two. A lot of time and frustration up until that point though
 
 
 ## On a scale of 1 (too easy) to 10 (too challenging), how difficult was this assignment?
-> 4 I propably messed it up since im not familiar with some of this stuff at all but I get the basic concept well enough. Technical issues were a pain in the butt though this time around
+> 3, After getting my compiler set up properly and actually being able to run and test my code this was a very easy assignment
 
 
 ## Did you encounter any problems in this assignment we should warn students about in the future? How can we make the assignment better?
-> Yes. Where and what I need to download in order to get a proper compiler is still fuzzy to me and I need to work that out still
+> Yes. Where and what I needed to download in order to get a proper compiler is still fuzzy to me and I was not familiar with everything I needed to know to complete this assignment, requiring me to learn a decent bit on my own. Other than that it was fine. 
 
